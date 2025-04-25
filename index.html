@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>РЕЗЮМЕ</h1>
+    </header>
+
+    <div class="container">
+        <div class="resume">
+            <header class="resume-header">
+                <h2 contenteditable="true" data-placeholder="Ваше полное имя"></h2>
+                <p class="description" contenteditable="true" data-placeholder="Расскажите про себя">
+                    
+                </p>
+            </header>
+
+            <div class="resume-section">
+                <h2>Ваши контакты</h2>
+                <p contenteditable="true" data-placeholder="email"></p>
+                <p contenteditable="true" data-placeholder="Phone"></p>
+            </div>
+
+            <div class="resume-section languages-section">
+                <h2>Язык</h2>
+                <div class="language-item">
+                    <h3 contenteditable="true" data-placeholder="Основной язык"></h3>
+                    <p contenteditable="true" data-placeholder="Каким дополнительно владеете"></p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>Опыт работы</h2>
+                <p contenteditable="true" data-placeholder="Ваш опыт работы"></p>
+            </div>
+
+            <div class="resume-section">
+                <h2>Образование</h2>
+                <p contenteditable="true" data-placeholder="Полученое образование">
+                    
+                </p>
+            </div>
+
+            <div class="resume-section">
+                <h2>Навыки</h2>
+                
+                <div class="skills-container">
+                    <div class="skills-column">
+                        <h3>Сильные стороны</h3>
+                        <ul class="hard-skills">
+                            <li contenteditable="true" data-placeholder="Python, с++ "></li>
+                            <li contenteditable="true" data-placeholder="e.g. Project Management"></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills-column">
+                        <h3>Дополнительные навыки</h3>
+                        <ul class="soft-skills">
+                            <li contenteditable="true" data-placeholder="e.g. Communication"></li>
+                            <li contenteditable="true" data-placeholder="e.g. Teamwork"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--блок интересов -->
+            <div class="resume-section">
+                <h2>Интересы</h2>
+                <div class="interests">
+                    <span class="interest-tag" contenteditable="true">дизайн</span>
+                    <span class="interest-tag" contenteditable="true">фото</span>
+                    <span class="interest-tag" contenteditable="true">c++</span>
+                    <span class="interest-tag" contenteditable="true">спорт</span>
+                </div>
+            </div>
+
+            <button id="download-pdf">📄 Download PDF</button>
+        </div>
+    </div>
+
+    <!-- Подключение jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
